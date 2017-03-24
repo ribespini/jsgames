@@ -1,0 +1,58 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border: 0;
+}
+
+.options {
+    height: 21px;
+    padding: 4px;
+    padding-bottom: 5px;
+}
+
+.options .start {
+    display: none;
+}
+
+.options .stop {
+    display: none;
+}
+
+.options.endless .start {
+    display: inline;
+}
+
+.options.endless .generate {
+    display: none;
+}
+
+.options.endless.running .start {
+    display: none;
+}
+
+.options.endless.running .stop {
+    display: inline;
+}
+
+.board {
+    height: calc(100% - 30px);
+}
+
+.board .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.board .row .cell {
+    float: left;
+}
+
+.board .row .cell.active {
+    background: #6daee6;
+}
+
+.board .row .cell.inactive {
+    background: #eee9e9;
+}

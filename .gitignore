@@ -1,0 +1,5 @@
+.vscode/
+.vs/
+node_modules/
+project.lock.json
+*.log

@@ -1,0 +1,15 @@
+{
+  "name": "gaming",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lite": "lite-server –port 8080",
+    "start": "npm run lite"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lite-server": "^2.3.0"
+  }
+}

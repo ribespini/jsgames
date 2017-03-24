@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>One dimensional cellular automata</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/automata1d.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="options" class="options">
+        <label>Rule number</label>
+        <input type="number" id="rule" value="73" size="3" />
+        <label>Cell size</label>
+        <input type="number" id="cellsize" value="10" size="3" />
+        <label>
+            <input type="checkbox" name="randomize" value="true" />
+            Randomize
+        </label>
+
+        <label>
+            <input type="radio" name="mode" onchange="checkGenerationMode()" value="false" checked />
+            Static
+        </label>
+        <label>
+            <input type="radio" name="mode" onchange="checkGenerationMode()" value="true" />
+            Continuous
+        </label>
+
+        <button type="button" class="generate" onclick="generateBoard()">Generate</button>
+        <button type="button" class="start" onclick="generateBoard()">Start</button>
+        <button type="button" class="stop" onclick="stopAutomata()">Stop</button>
+    </div>
+    <div class="board"></div>
+
+    <script src="/js/automata1d.js"></script>
+</body>
+</html>
